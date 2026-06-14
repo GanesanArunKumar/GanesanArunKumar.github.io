@@ -11,6 +11,7 @@
   var scrollNavTicking = false;
   var scrollProgressTicking = false;
   var experienceYearLabels = document.querySelectorAll("[data-experience-years]");
+  var currentYearLabels = document.querySelectorAll("[data-current-year]");
   var navScrollTicking = false;
   var navItems = Array.prototype.slice
     .call(document.querySelectorAll(".nav-links a[href^='#']"))
@@ -44,11 +45,20 @@
     });
   }
 
+  function updateCurrentYear() {
+    var currentYear = new Date().getFullYear();
+
+    Array.prototype.forEach.call(currentYearLabels, function (label) {
+      label.textContent = currentYear;
+    });
+  }
+
   function getHeaderHeight() {
     return siteHeader ? siteHeader.offsetHeight : 0;
   }
 
   updateExperienceYears();
+  updateCurrentYear();
 
   function setActiveNavItem(activeItem) {
     navItems.forEach(function (item) {
