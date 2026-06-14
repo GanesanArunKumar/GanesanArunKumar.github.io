@@ -2703,17 +2703,19 @@ h3 {
 
 .industries-grid {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 14px;
-  margin-top: 22px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 24px;
 }
 
 .industry-card {
+  position: relative;
   display: grid;
-  justify-items: center;
+  grid-template-rows: auto auto minmax(2.7em, auto);
+  justify-items: start;
   align-content: center;
-  gap: 16px;
-  min-height: 142px;
+  gap: 12px;
+  min-height: 178px;
   border: 1px solid rgb(56 189 248 / 0.18);
   border-radius: 18px;
   background:
@@ -2722,22 +2724,55 @@ h3 {
   box-shadow:
     0 18px 52px rgb(0 0 0 / 0.25),
     inset 0 1px 0 rgb(255 255 255 / 0.055);
-  padding: 20px 14px;
-  text-align: center;
+  overflow: hidden;
+  padding: 20px;
+  text-align: left;
+  cursor: pointer;
   transition:
     transform 170ms ease,
     border-color 170ms ease,
-    box-shadow 170ms ease;
+    box-shadow 170ms ease,
+    background 170ms ease;
+}
+
+.industry-card::before {
+  position: absolute;
+  inset: auto 16px 12px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgb(56 189 248 / 0.32), transparent);
+  content: "";
+  opacity: 0;
+  transform: scaleX(0.7);
+  transition:
+    opacity 170ms ease,
+    transform 170ms ease;
+  pointer-events: none;
 }
 
 .industry-card:hover,
+.industry-card:focus,
 .industry-card:focus-within {
   transform: translateY(-4px);
   border-color: rgb(56 189 248 / 0.58);
+  background:
+    linear-gradient(150deg, rgb(15 23 42 / 0.9), rgb(2 8 23 / 0.76)),
+    rgb(2 8 23 / 0.8);
   box-shadow:
     0 24px 62px rgb(0 0 0 / 0.32),
     0 0 36px rgb(56 189 248 / 0.15),
     inset 0 1px 0 rgb(255 255 255 / 0.08);
+}
+
+.industry-card:hover::before,
+.industry-card:focus::before,
+.industry-card:focus-within::before {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.industry-card:focus-visible {
+  outline: 2px solid rgb(56 189 248 / 0.72);
+  outline-offset: 4px;
 }
 
 .industry-icon {
@@ -2752,6 +2787,20 @@ h3 {
   box-shadow:
     0 0 24px rgb(56 189 248 / 0.13),
     inset 0 0 18px rgb(56 189 248 / 0.06);
+  transition:
+    border-color 170ms ease,
+    box-shadow 170ms ease,
+    transform 170ms ease;
+}
+
+.industry-card:hover .industry-icon,
+.industry-card:focus .industry-icon,
+.industry-card:focus-within .industry-icon {
+  border-color: rgb(125 211 252 / 0.76);
+  box-shadow:
+    0 0 30px rgb(56 189 248 / 0.24),
+    inset 0 0 20px rgb(56 189 248 / 0.08);
+  transform: translateY(-2px);
 }
 
 .industry-icon svg {
@@ -2766,13 +2815,35 @@ h3 {
 
 .industry-card h3 {
   color: #f8fbff;
-  font-size: 0.96rem;
-  line-height: 1.22;
+  font-size: clamp(0.98rem, 1.15vw, 1.12rem);
+  line-height: 1.18;
+}
+
+.industry-card p {
+  margin: 0;
+  color: rgb(226 232 240 / 0.78);
+  font-size: clamp(0.76rem, 0.9vw, 0.9rem);
+  font-weight: 750;
+  line-height: 1.36;
+  opacity: 0;
+  transform: translateY(7px);
+  transition:
+    opacity 170ms ease,
+    transform 170ms ease,
+    color 170ms ease;
+}
+
+.industry-card:hover p,
+.industry-card:focus p,
+.industry-card:focus-within p {
+  color: rgb(226 232 240 / 0.92);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (max-width: 980px) {
   .industries-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -2782,11 +2853,32 @@ h3 {
   }
 
   .industry-card {
-    min-height: 132px;
+    min-height: 168px;
+    gap: 10px;
+    padding: 16px 12px;
+  }
+
+  .industry-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 13px;
+  }
+
+  .industry-icon svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .industry-card h3 {
+    font-size: clamp(0.82rem, 3.35vw, 0.98rem);
+  }
+
+  .industry-card p {
+    font-size: clamp(0.68rem, 2.85vw, 0.78rem);
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 380px) {
   .industries-grid {
     grid-template-columns: 1fr;
   }
@@ -7442,5 +7534,47 @@ body {
     max-width: none;
     justify-self: stretch;
     border-radius: 16px;
+  }
+}
+
+@media (max-width: 720px) {
+  .industries-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .industry-card {
+    min-height: 168px;
+    gap: 10px;
+    padding: 16px 12px;
+  }
+
+  .industry-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 13px;
+  }
+
+  .industry-icon svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .industry-card h3 {
+    font-size: clamp(0.82rem, 3.35vw, 0.98rem);
+  }
+
+  .industry-card p {
+    font-size: clamp(0.68rem, 2.85vw, 0.78rem);
+  }
+}
+
+@media (max-width: 380px) {
+  .industries-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .industry-card {
+    min-height: 152px;
   }
 }
