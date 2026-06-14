@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1672" height="941" viewBox="0 0 1672 941" role="img" aria-labelledby="title desc">
+  <title id="title">Bakery business website illustration</title>
+  <desc id="desc">Premium bakery website mockup showing product showcase, cake gallery and customer enquiry sections.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#020617"/>
+      <stop offset=".58" stop-color="#071425"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" x2="1">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#000" flood-opacity=".42"/>
+    </filter>
+  </defs>
+  <rect width="1672" height="941" fill="url(#bg)"/>
+  <circle cx="260" cy="720" r="330" fill="#0ea5e9" opacity=".08"/>
+  <circle cx="1440" cy="140" r="290" fill="#38bdf8" opacity=".08"/>
+  <text x="72" y="98" fill="#f8fbff" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="900">Bakery Business Website</text>
+  <text x="72" y="144" fill="#7dd3fc" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="800">Digital storefront, product showcase and enquiry flow</text>
+  <rect x="84" y="220" width="470" height="520" rx="34" fill="#081827" stroke="#38bdf8" stroke-opacity=".3" filter="url(#shadow)"/>
+  <text x="128" y="296" fill="#f8fbff" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="900">Freshly baked</text>
+  <text x="128" y="350" fill="#38bdf8" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="900">for every occasion.</text>
+  <text x="128" y="412" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="22">Customers explore products, trust the brand and send enquiries from any device.</text>
+  <rect x="128" y="480" width="182" height="52" rx="18" fill="url(#blue)"/>
+  <text x="170" y="514" fill="#03111f" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="900">Enquire Now</text>
+  <g transform="translate(128 590)">
+    <circle cx="28" cy="28" r="28" fill="#0ea5e9" opacity=".22"/>
+    <circle cx="128" cy="28" r="28" fill="#0ea5e9" opacity=".22"/>
+    <circle cx="228" cy="28" r="28" fill="#0ea5e9" opacity=".22"/>
+    <text x="0" y="88" fill="#dbeafe" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">Cakes</text>
+    <text x="100" y="88" fill="#dbeafe" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">Breads</text>
+    <text x="200" y="88" fill="#dbeafe" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">Events</text>
+  </g>
+  <rect x="616" y="96" width="820" height="650" rx="34" fill="#06101f" stroke="#38bdf8" stroke-opacity=".3" filter="url(#shadow)"/>
+  <rect x="616" y="96" width="820" height="78" rx="34" fill="#0b1a2c"/>
+  <circle cx="660" cy="135" r="8" fill="#38bdf8"/>
+  <circle cx="688" cy="135" r="8" fill="#38bdf8" opacity=".55"/>
+  <circle cx="716" cy="135" r="8" fill="#38bdf8" opacity=".35"/>
+  <rect x="666" y="218" width="720" height="170" rx="24" fill="#0b1a2c" stroke="#38bdf8" stroke-opacity=".2"/>
+  <text x="706" y="274" fill="#f8fbff" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900">Signature cake gallery</text>
+  <text x="706" y="318" fill="#94a3b8" font-family="Inter, Arial, sans-serif" font-size="20">Product categories, custom cakes and business information in one place.</text>
+  <g transform="translate(666 430)">
+    <rect width="216" height="196" rx="24" fill="#0f2137" stroke="#38bdf8" stroke-opacity=".22"/>
+    <rect x="252" width="216" height="196" rx="24" fill="#0f2137" stroke="#38bdf8" stroke-opacity=".22"/>
+    <rect x="504" width="216" height="196" rx="24" fill="#0f2137" stroke="#38bdf8" stroke-opacity=".22"/>
+    <circle cx="108" cy="74" r="44" fill="#38bdf8" opacity=".2"/>
+    <circle cx="360" cy="74" r="44" fill="#38bdf8" opacity=".2"/>
+    <circle cx="612" cy="74" r="44" fill="#38bdf8" opacity=".2"/>
+    <rect x="38" y="136" width="140" height="12" rx="6" fill="#38bdf8"/>
+    <rect x="290" y="136" width="140" height="12" rx="6" fill="#38bdf8"/>
+    <rect x="542" y="136" width="140" height="12" rx="6" fill="#38bdf8"/>
+    <rect x="54" y="162" width="108" height="10" rx="5" fill="#94a3b8" opacity=".55"/>
+    <rect x="306" y="162" width="108" height="10" rx="5" fill="#94a3b8" opacity=".55"/>
+    <rect x="558" y="162" width="108" height="10" rx="5" fill="#94a3b8" opacity=".55"/>
+  </g>
+  <rect x="1504" y="230" width="96" height="450" rx="36" fill="#07111f" stroke="#38bdf8" stroke-opacity=".36" filter="url(#shadow)"/>
+  <rect x="1520" y="282" width="64" height="104" rx="16" fill="#0f2137"/>
+  <rect x="1520" y="414" width="64" height="104" rx="16" fill="#0f2137"/>
+  <rect x="1520" y="546" width="64" height="104" rx="16" fill="#0f2137"/>
+  <rect x="720" y="782" width="720" height="76" rx="24" fill="#06101f" stroke="#38bdf8" stroke-opacity=".22"/>
+  <text x="760" y="830" fill="#dbeafe" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800">Product showcase -> enquiries -> customer trust</text>
+</svg>

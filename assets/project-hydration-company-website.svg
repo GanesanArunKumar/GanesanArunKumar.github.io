@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1672" height="941" viewBox="0 0 1672 941" role="img" aria-labelledby="title desc">
+  <title id="title">Hydration company website illustration</title>
+  <desc id="desc">Modern packaged drinking water website mockup with product catalogue, service showcase and enquiry cards.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#020617"/>
+      <stop offset=".55" stop-color="#062032"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#7dd3fc"/>
+      <stop offset="1" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1672" height="941" fill="url(#bg)"/>
+  <path d="M0 760c230-70 330 70 560 0s360-72 580 0 344 66 532-12v193H0z" fill="#0ea5e9" opacity=".1"/>
+  <circle cx="1280" cy="190" r="300" fill="#38bdf8" opacity=".09"/>
+  <text x="78" y="102" fill="#f8fbff" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="900">Hydration Company Website</text>
+  <text x="78" y="148" fill="#7dd3fc" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="800">Products, jar delivery services and customer enquiries online</text>
+  <rect x="84" y="210" width="1504" height="560" rx="36" fill="#06101f" stroke="#38bdf8" stroke-opacity=".28"/>
+  <g transform="translate(136 280)">
+    <text x="0" y="0" fill="#f8fbff" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="900">Pure water.</text>
+    <text x="0" y="62" fill="#38bdf8" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="900">Clear business presence.</text>
+    <text x="0" y="126" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="23">A professional website for bottled water products, jar delivery and customer discovery.</text>
+    <rect x="0" y="178" width="196" height="56" rx="18" fill="url(#water)"/>
+    <text x="44" y="214" fill="#03111f" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="900">View Products</text>
+    <g transform="translate(0 296)">
+      <rect width="190" height="116" rx="22" fill="#0b1a2c" stroke="#38bdf8" stroke-opacity=".25"/>
+      <rect x="226" width="190" height="116" rx="22" fill="#0b1a2c" stroke="#38bdf8" stroke-opacity=".25"/>
+      <rect x="452" width="190" height="116" rx="22" fill="#0b1a2c" stroke="#38bdf8" stroke-opacity=".25"/>
+      <text x="28" y="48" fill="#f8fbff" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="900">Bottles</text>
+      <text x="254" y="48" fill="#f8fbff" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="900">Water Jars</text>
+      <text x="480" y="48" fill="#f8fbff" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="900">Delivery</text>
+      <rect x="28" y="72" width="112" height="10" rx="5" fill="#38bdf8" opacity=".62"/>
+      <rect x="254" y="72" width="112" height="10" rx="5" fill="#38bdf8" opacity=".62"/>
+      <rect x="480" y="72" width="112" height="10" rx="5" fill="#38bdf8" opacity=".62"/>
+    </g>
+  </g>
+  <g transform="translate(930 190)" filter="url(#glow)">
+    <path d="M185 0c92 123 160 226 160 340 0 122-80 210-160 210S25 462 25 340C25 226 93 123 185 0z" fill="url(#water)" opacity=".9"/>
+    <path d="M185 70c58 82 98 154 98 238 0 84-45 142-98 142S87 392 87 308c0-84 40-156 98-238z" fill="#020617" opacity=".24"/>
+  </g>
+  <rect x="1258" y="250" width="256" height="392" rx="32" fill="#07111f" stroke="#38bdf8" stroke-opacity=".36"/>
+  <rect x="1284" y="306" width="204" height="86" rx="18" fill="#0f2137"/>
+  <rect x="1284" y="424" width="204" height="86" rx="18" fill="#0f2137"/>
+  <rect x="1284" y="542" width="204" height="64" rx="18" fill="#0ea5e9"/>
+  <text x="1316" y="358" fill="#dbeafe" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="900">Catalogue</text>
+  <text x="1316" y="476" fill="#dbeafe" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="900">Services</text>
+  <text x="1320" y="583" fill="#03111f" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="900">Enquire</text>
+</svg>
