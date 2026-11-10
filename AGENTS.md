@@ -18,7 +18,7 @@ Current structure:
 
 ## Primary Goal
 
-Build and maintain a premium, modern, dark, electric-blue one-page portfolio for a software engineer and business automation consultant.
+Build and maintain a simple, premium, light one-page portfolio for a software engineer and full-stack Python developer. Keep practical business automation as the supporting value proposition.
 
 The page should speak to business owners in India and Europe who want to digitize manual work, spreadsheets, invoicing, inventory, delivery, ERP, portals, and workflow automation.
 
@@ -54,17 +54,18 @@ Do not invent client names, metrics, testimonials, certifications, case studies,
 
 Target style:
 
-- Dark premium background
-- Electric blue accent: `#38BDF8`
-- Hover blue: `#0EA5E9`
-- Glow: `rgba(56, 189, 248, 0.25)`
-- Glassmorphism cards
-- Rounded corners
-- Subtle animated grid background
-- Smooth, restrained animations
-- Premium enterprise software feel
+- Pale neutral background with a centered white canvas, no wider than 1500 pixels
+- Near-black text, soft grey borders, and a restrained blue-violet accent: `#6750CF`
+- Hover violet: `#5039B5`
+- Soft corners and a restrained shadow
+- Original light hero artwork expressing ideas becoming working software
+- Four primary destinations: Home, About, Work, and Contact
+- Three selected projects with concise descriptions
+- Visible, usable navigation without JavaScript
+- Restrained motion that respects reduced-motion preferences
+- A clear, practical software consultant profile
 
-Avoid childish animation, loud gradients, generic stock startup visuals, and overly playful decorative elements.
+Avoid dark backgrounds, globe or workstation artwork, glowing effects, animated grids, repeated capability sections, childish animation, loud gradients, and overly playful decorative elements.
 
 The page should feel polished on both desktop and mobile from the first implementation pass.
 
